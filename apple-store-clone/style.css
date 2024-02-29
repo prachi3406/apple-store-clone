@@ -1,0 +1,483 @@
+body {
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 100;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(245, 245, 247);
+    color: #343434;
+}
+
+nav ul{
+    margin: 0px;
+}
+
+nav li {
+    display: inline;
+    line-height: 44px;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px 19.5px 0px 19.5px;
+
+}
+
+nav {
+    height: fit-content;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+
+}
+
+nav li i {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #343434;
+}
+
+nav li :hover {
+    color: #1D1D1F;
+}
+
+.offer {
+    z-index: -10;
+    width: 100%;
+    height: 46px;
+    padding: 16px 0px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    animation: abc 3s ease-in 0s 1 normal;
+    transition: all 3s linear;
+}
+
+@keyframes abc {
+    0% {
+        background-color: #1371CF;
+        color: white;
+        height: 0px;
+    }
+
+    15% {
+        background-color: #1371CF;
+        color: white;
+        height: 46px;
+    }
+
+    100% {
+        background-color: white;
+        color: black;
+    }
+}
+
+input {
+    display: none;
+}
+
+.offer .off {
+    margin: 5px 65px;
+    padding: 0px 3px;
+    width: 850px;
+    height: 40px;
+    position: relative;
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: abc 3s ease-in 0s 1 normal;
+    transition: all 3s ease-in-out;
+}
+
+@media (max-width : 1024px){
+    #right{
+        display: none;
+    }
+    #left{
+        display: none;
+    }
+}
+
+#a {
+
+    position: absolute;
+    text-align: center;
+    font-family: Arial;
+    font-weight: 100;
+    font-size: 0.95rem;
+    height: 40px;
+    width: 850px;
+    left: 0px;
+    background-color: inherit;
+    animation: abc 3s ease-in 0s 1 normal;
+    transition: all 1s ease-in-out;
+
+}
+
+#b {
+
+    position: absolute;
+    text-align: center;
+    font-family: Arial;
+    font-weight: 100;
+    background-color: inherit;
+    height: 40px;
+    width: 850px;
+    font-size: 0.95rem;
+    left: 1000px;
+    animation: abc 3s ease-in 0s 1 normal;
+    transition: all 1s ease-in-out;
+}
+
+#b2 {
+
+    position: absolute;
+    text-align: center;
+    font-family: Arial;
+    font-weight: 100;
+    height: 40px;
+    width: 850px;
+    background-color: inherit;
+    font-size: 0.95rem;
+    left: -1000px;
+    animation: abc 3s ease-in 0s 1 normal;
+    transition: all 1s ease-in-out;
+}
+
+#rt:checked~.off #a {
+    left: 1000px;
+}
+
+#rt:checked~.off #b2 {
+    left: 0px;
+}
+
+#lt:checked~.off #a {
+    left: -1000px;
+
+}
+
+#lt:checked~.off #b {
+    left: 0px;
+}
+
+#right {
+    background-color: inherit;
+    color: #6E6E73;
+    font-size: 1rem;
+    position: relative;
+    right: 158px;
+    cursor: pointer;
+    line-height: 46px;
+    z-index: 10;
+}
+
+
+
+#left {
+    background-color: inherit;
+    font-size: 1rem;
+    position: relative;
+    left: 158px;
+    color: #6E6E73;
+    cursor: pointer;
+    line-height: 46px;
+    z-index: 10;
+}
+
+main {
+    margin-left: 140px;
+    margin-top: 80px;
+    position: relative;
+
+}
+
+.first {
+    height: fit-content;
+    display: flex;
+}
+
+main .head {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #6E6E73;
+    display: block;
+    flex-shrink: -2;
+}
+
+.supp {
+    display: flex;
+    align-self: flex-end;
+    margin-left: 450px;
+    /* top: 0px;
+    left: 100px; */
+    width: 250px;
+    height: 100px;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+    color: black;
+    gap: 22px;
+    line-height: 20px;
+}
+
+.supp a {
+    text-decoration: none;
+    color: #1371CF;
+}
+
+.q {
+    display: flex;
+
+}
+
+.q img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.w {
+    display: flex;
+}
+
+.w img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.co {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1296px;
+    height: fit-content;
+    position: absolute;
+    margin-right: 110px;
+    top: 190px;
+}
+
+@media (max-width : 1400px) {
+    .supp{
+        display: none;
+    }
+}
+
+.card1 {
+    display: flex;
+    background-color: inherit;
+    width: 136px;
+    height: 138px;
+    margin: 4px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.card1 img {
+    width: 130px;
+}
+
+.sec {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #6E6E73;
+    position: absolute;
+    top: 410px;
+}
+
+.cont {
+    display: flex;
+    width: 100%;
+    height: 410px;
+    position: absolute;
+    top: 455px;
+    background-color: inherit;
+}
+
+.cards {
+    width: 400px;
+    height: 500px;
+    background-color: inherit;
+    margin: 10px;
+    z-index: 0;
+    position: relative;
+    line-height: 37px;
+    border-radius: 20px;
+    transition: all 0.2s linear 0s;
+}
+
+.cards img {
+    border-radius: 20px;
+    z-index: -10;
+}
+
+.info {
+    color: black;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.sub {
+    font-size: 0.7rem;
+}
+
+.heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 1.15rem;
+}
+
+.cards:hover {
+    transform: scale(1.008);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    position: relative;
+    top: 890px;
+    margin-left: 140px;
+}
+
+h2 {
+    font-size: 1.7rem;
+    color: black;
+}
+
+button {
+    background-color: #E4E4E6;
+    appearance: none;
+    color: black;
+    border: 0px solid black;
+    height: 40px;
+    padding: 0px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+
+footer p {
+    color: #6E6E73;
+    font-size: 12px;
+    margin: 55px 127px;
+    margin-bottom: 10px;
+    width: 1000px;
+    line-height: 15px;
+}
+
+.end {
+
+    color: #6E6E73;
+    font-size: 13px;
+}
+
+#apple {
+    font-size: 16px;
+    margin-left: 129px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+#arr {
+    color: #6e6e73b8;
+    margin-right: 8px;
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+}
+
+.man :hover {
+    color: black;
+}
+
+.links {
+    margin-left: 127px;
+    width: 1000px;
+    height: 340px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 12px;
+
+}
+
+.oo {
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+    margin-bottom: 14px;
+    color: black;
+}
+
+.oo a {
+    line-height: 24px;
+    text-decoration: none;
+    color: #343434;
+}
+
+.oo a:hover {
+    text-decoration: underline;
+}
+
+.brr {
+    margin-left: 127px;
+    height: 1px;
+    width: 1000px;
+    background-color: #cccdce;
+    margin-bottom: 20px;
+}
+
+#more {
+    margin-left: 127px;
+    font-size: 12px;
+    color: #6E6E73;
+    margin-bottom: 10px;
+}
+
+#more a {
+    color: #1371CF;
+}
+
+#more2 {
+    margin-left: 127px;
+    font-size: 12px;
+    color: #6E6E73;
+    display: inline;
+}
+
+#more2 ul {
+    display: inline-flex;
+}
+
+
+#more2 ul a {
+    color: #1D1D1F;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#in {
+    color: #1D1D1F;
+    text-decoration: none;
+    position: relative;
+    left: 287px;
+}
+
+#in a:hover {
+    text-decoration: underline;
+}
+
+#more2 a:hover {
+    text-decoration: underline;
+}
